@@ -14,7 +14,7 @@ public class MyFirstSeleniumTest {
     @Test
     public void test01() throws InterruptedException {
 
-        driver.get(Constants.URL);
+        driver.get("https://demoqa.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
         Reporter.log("Opened the Website");
         driver.findElement(By.ByXPath.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]")).click();
